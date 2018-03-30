@@ -1,0 +1,82 @@
+@import '../../static/css/virable.less';
+#cart{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    header{
+        line-height: .9rem;
+        text-align: center;
+        background: #fefefe;
+        border-bottom:1px solid #ddd;
+        position:relative;
+    }
+    footer{
+        height:.9rem;
+        line-height: .9rem;
+        text-align: center;
+        background: #fefefe;
+        border-top:1px solid #ddd;
+        display: flex;
+       justify-content: center;align-items: center;;
+        >div{
+            flex: 1;
+        }
+    }
+    .goods-list{
+        flex: 1;
+        height:100%;
+        overflow: auto;
+    }
+    .edit{
+        position:absolute;
+        right:0;height:100%;
+        padding: 0 20px;
+    }
+    li{
+       justify-content: center;align-items: center;;
+        padding: 10px;
+    }
+    .select-btn{
+        width:.5rem;
+        height:.5rem;
+        display: inline-block;
+        border-radius: 100%;
+        border:1px solid #ccc;
+        line-height: .5rem;
+    }
+    .icon-selected{
+        background: #fc4141;
+        color:#fff;
+        border-color:#fc4141;
+    }
+    .goods-img{
+        width: 2.4rem;
+        height:2.4rem;
+        border:1px solid #ccc;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    .flex{
+        display: flex;
+    }
+    .right-area{
+        flex: 1;
+        line-height: .8rem;
+        font-size: .3rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .price-box{
+        flex: 2;
+        color:#fc4141;
+    }
+    .count-box{
+        flex: 3;
+        span{
+            display: inline-block;
+            padding: 5px 10px;
+            border:1px solid #ccc;
+        }
+    }
+}
